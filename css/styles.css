@@ -15,8 +15,8 @@ body {
   height: 300px;
   background-color: white;
   border-radius: 50%;
-  border: 4px solid #000;
-  // box-shadow: 2px 2px 8px 2px rgba(22, 45, 75, 0.92);
+  border: 8px solid #000;
+ // box-shadow: 2px 2px 8px 2px rgba(22, 45, 75, 0.92);
   background-image: url('../img/faceMetCijfers.png');
   background-size: cover;
   position: relative;
@@ -58,7 +58,7 @@ body {
 /* hour hand */
 
 .hour {
-  width: 8px;
+  width: 6px;
   height: 28%;
   background-color: #000;
 }

@@ -47,4 +47,4 @@ function rotate() {
 }
 
 // for every 1000 milliseconds(ie, 1 second) interval, activate the rotate() function.
-setInterval(rotate, 1000*60);
+setInterval(rotate, 1000);
