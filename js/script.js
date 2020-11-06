@@ -21,14 +21,16 @@ function rotate() {
   const secondsFraction = seconds / 60;
 //  const minutesFraction = (secondsFraction + minutes) / 60;
   var minutesFraction = 0;
-  if (minutes<15) {
+  if (minutes<10) {
     minutesFraction = 0;
-  } else if (minutes<30) {
+  } else if (minutes<25) {
     minutesFraction = .25;
-  } else if (minutes<45) {
+  } else if (minutes<40) {
     minutesFraction = .5;
-  } else {
+  } else if (minutes<55) {
     minutesFraction = .75;
+  } else {
+    minutesFraction = 0;
   }
   const hoursFraction = (minutesFraction + hours) / 12;
 
@@ -45,4 +47,4 @@ function rotate() {
 }
 
 // for every 1000 milliseconds(ie, 1 second) interval, activate the rotate() function.
-setInterval(rotate, 1000);
+setInterval(rotate, 1000*60);
