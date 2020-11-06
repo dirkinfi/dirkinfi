@@ -30,7 +30,7 @@ function rotate() {
   } else if (minutes<55) {
     minutesFraction = .75;
   } else {
-    minutesFraction = 0;
+    minutesFraction = 1; // let op moet 1 zijn want de hour is nu nog eentje eerder
   }
   const hoursFraction = (minutesFraction + hours) / 12;
 
